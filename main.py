@@ -43,7 +43,7 @@ if "chats" not in st.session_state:
 if "current_chat_id" not in st.session_state:
     
     new_id = str(uuid.uuid4())
-    st.session_state.chats[new_id] = {"name": "Нова подорож", "messages": []}
+    st.session_state.chats[new_id] = {"name": "RouteGenie AI: Нова подорож", "messages": []}
     st.session_state.current_chat_id = new_id
 
 def create_new_chat():
